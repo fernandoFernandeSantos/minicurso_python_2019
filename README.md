@@ -19,3 +19,4 @@ Material do minicurso de introdução a linguagem Python 2019
 
 4. Pandas:
 
+5. Dados sobrea a Amazônia http://terrabrasilis.dpi.inpe.br/app/dashboard/alerts/legal/amazon
