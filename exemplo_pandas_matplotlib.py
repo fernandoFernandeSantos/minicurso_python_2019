@@ -12,6 +12,31 @@ df = pd.DataFrame({
 })
 
 
-#df.plot(kind='scatter',x='num_children',y='num_pets',color='red')
-df.plot(kind='bar', x='name', y='age')
+graph_type = input("Tipo de grafico:")
+
+if graph_type == 'scatter':
+    df.plot(kind='scatter',x='num_children',y='num_pets',color='red')
+
+if graph_type == 'bar':
+    df.plot(kind='bar', x='name', y='age')
+
+if graph_type == 'multiple':
+    # get current axis
+    ax = plt.gca()
+    df_plot = df.plot(kind='line', x='name', y='num_children', ax=ax)
+    df_plot.set_ylabel("Children/pets")
+    df_plot = df.plot(kind='line', x='name', y='num_pets', color='red', ax=ax)
+    
+if graph_type == 'group':
+    df.groupby('state')['name'].nunique().plot(kind='bar')
+
+if graph_type == 'stacked':
+    df.groupby(['state', 'gender']).size().unstack().plot(kind='bar', stacked=True)
+
+if graph_type == 'stackedgender':
+    df.groupby(['gender', 'state']).size().unstack().plot(kind='bar', stacked=True)
+
+if graph_type == 'histogram':
+    df[['age']].plot(kind='hist', bins=[0,20,40,60,80,100],rwidth=0.8)
+
 plt.show()
