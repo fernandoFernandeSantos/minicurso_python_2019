@@ -13,10 +13,10 @@ Material do minicurso de introdução a linguagem Python 2019
 
 1. A maior parte do curso foi baseada em: tutorialspoint.com/python
 
-2. Matplotlib: 
+2. Matplotlib: https://matplotlib.org/
 
-3. Numpy:
+3. Pandas: https://pandas.pydata.org/
 
-4. Pandas:
+4. Dados sobrea a Amazônia: http://terrabrasilis.dpi.inpe.br/app/dashboard/alerts/legal/amazon
 
-5. Dados sobrea a Amazônia http://terrabrasilis.dpi.inpe.br/app/dashboard/alerts/legal/amazon
+5. Exemplo Matplotlib + Pandas: http //queirozf.com/entries/pandas-dataframe-plot-examples-with-matplotlib-pyplot
