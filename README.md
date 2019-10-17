@@ -11,7 +11,7 @@ Material do minicurso de introdução a linguagem Python 2019
 
 ## Referências
 
-1. A maior parte do curso foi baseada em: https:tutorialspoint.com/python
+1. A maior parte do curso foi baseada em: https://tutorialspoint.com/python
 
 2. Matplotlib: https://matplotlib.org/
 
